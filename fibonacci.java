@@ -1,15 +1,21 @@
-class Fibonacci{  
-public static void main(String args[])  
-{    
- int n1=0,n2=1,n3,i,count=10;    
- System.out.print(n1+" "+n2);//printing 0 and 1    
-    
- for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
- {    
-  n3=n1+n2;    
-  System.out.print(" "+n3);    
-  n1=n2;    
-  n2=n3;    
- }    
-  
-}}  
+public class Newfibonacci {
+
+    public static void main(String[] args) {
+
+        int count = 117, num1 = 0, num2 = 1;
+        System.out.print("Fibonacci Series of "+count+" numbers:");
+
+        for (int i = 1; i <= count; ++i)
+        {
+            System.out.print(num1+" ");
+
+            /* On each iteration, we are assigning second number
+             * to the first number and assigning the sum of last two
+             * numbers to the second number
+             */
+            int sumOfPrevTwo = num1 + num2;
+            num1 = num2;
+            num2 = sumOfPrevTwo;
+        }
+    }
+}
