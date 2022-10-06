@@ -32,7 +32,7 @@ import java.util.regex.*;
             System.out.println(ans);
 	   }  
 	   else {
-	   System.out.println("The value is not found");           
+	   System.out.println("The given value is should be <100");           
           }
         }
     }
