@@ -13,8 +13,7 @@ public class table {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(bufferedReader.readLine());
-        int n = 2;
-        /*from w ww .  ja v  a 2s  .co  m*/
+        
         int sum;
         
         for(int i = 1; i <= 10; i++){
